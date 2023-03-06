@@ -1214,11 +1214,6 @@ input[type="radio"]:checked + label span {
   }
 }
 
-/* @media (min-width: 361px) and (max-width: 767px) {
-  .news-aside {
-    margin: 0 auto;
-  }
-} */
 
 @media (min-width: 360px) and (max-width: 767px) {
   .container {
@@ -1357,6 +1352,10 @@ input[type="radio"]:checked + label span {
     width: 100%;
   }
 
+  .products-img {
+    /* display: block;
+    margin: 0 auto; */
+  }
   .products-item-title {
     max-width: 290px;
   }
@@ -1375,11 +1374,15 @@ input[type="radio"]:checked + label span {
     width: 336px;
     /* height: 240px; */
     margin-left: 0;
+    margin: 0 auto;
 
   }
   .products-img {
-    margin-left: 26px;
+    /* margin-left: 26px; */
     width: 285px;
     height: 285px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
