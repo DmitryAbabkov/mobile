@@ -401,7 +401,7 @@
     background-position: center center;
     background-size: cover;
     color: #fff;
-    min-height: 450px;
+    height: 450px;
   }
   
   .nav {
