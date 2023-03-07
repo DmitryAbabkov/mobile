@@ -401,7 +401,7 @@
     background-position: center center;
     background-size: cover;
     color: #fff;
-    height: 450px;
+    min-height: 450px;
   }
   
   .nav {
@@ -869,7 +869,7 @@
     display: flex;
     width: calc((100% - 12px)/4);
     /* margin-right: 5px; */
-    min-height: 320px;
+    height: 320px;
     color: #fff;
     text-transform: uppercase;
     padding: 100px 22px 15px 22px;
@@ -1151,31 +1151,76 @@ input[type="radio"]:checked + label span {
   .nav-svg {
     display: none;
   }
+  .nav-list {
+    display: flex;
+  }
 }
-@media (max-width: 1200px) {
+
+
+
+@media(min-width: 768px) and (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .container-main {
+    justify-content: space-around;
+  }
+
+  .header-content {
+    font-size: 40px;
+    max-width: 616px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+  .nav-svg {
+    display: block;
+  }
+
+  .triends-title {
+    font-size: 18px;
+  }
+
   .triends-list {
     flex-wrap: wrap;
   }
   .triends-item {
     width: calc((100% - 4px)/2);
+    height: 247px;
   }
 
   .triends-lemon, .triends-mountains {
     margin-top: 4px;
   }
 
-  .nav-list {
-    display: flex;
+    .triends-item-title {
+      font-size: 17px;
+      max-width: 248px;
+    }
+  .triends-border {
+    padding-top: 30px;
+    padding-left: 31px;
+    padding-bottom: 30px;
   }
-  .nav-svg {
-    display: none;
+
+  .news-item {
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+
+  .products {
+    margin-top: 0;
   }
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .container {
-    max-width: 768px;
+    max-width: 767px;
     margin-left: 35px;
     margin-right: 35px;
   }
@@ -1212,10 +1257,13 @@ input[type="radio"]:checked + label span {
   .products-item {
     margin-top: 28px;
   }
-}
+
+  .themse-aside-item {
+    padding-left: 0;
+  }
 
 
-@media (min-width: 360px) and (max-width: 767px) {
+
   .container {
     margin-left: 13px;
     margin-right: 13px;
@@ -1251,11 +1299,15 @@ input[type="radio"]:checked + label span {
   }
 
   .triends {
-    margin-top: 45px;
+    margin-top: 40px;
+  }
+  .triends-list {
+    flex-wrap: wrap;
   }
 
   .triends-item {
     width: 100%;
+    height: 232px;
     margin-top: 2px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1272,6 +1324,7 @@ input[type="radio"]:checked + label span {
 
   .news {
     justify-content: center;
+    margin-top: 44px;
   }
 
   .news-item {
@@ -1350,6 +1403,7 @@ input[type="radio"]:checked + label span {
 
   .products-item {
     width: 100%;
+    margin-top: 24px;
   }
 
   .products-img {
