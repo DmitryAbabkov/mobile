@@ -968,8 +968,7 @@
     border: 3px solid rgba(181, 159, 91, 0.6);
     order: 0;
     width: 350px;
-    margin-left: -20px;
-    height: 267px;
+    margin-left: -24px;
     position: relative;
   }
 
@@ -1011,6 +1010,7 @@
     justify-content: space-between;
     margin-top: 25px;
     align-items: center;
+    /* margin-bottom: 25px; */
   }
 
   .new-price {
@@ -1158,7 +1158,7 @@ input[type="radio"]:checked + label span {
 
 
 
-@media(min-width: 768px) and (max-width: 1200px) {
+@media(min-width: 641px) and (max-width: 1200px) {
   .container {
     max-width: 1200px;
     margin-left: 35px;
@@ -1212,13 +1212,19 @@ input[type="radio"]:checked + label span {
     margin-bottom: 70px;
   }
 
+  .themse-aside-item {
+    padding: 15px 0;
+  }
+
   .products {
     margin-top: 0;
   }
+
+
 }
 
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 640px) {
   .container {
     max-width: 767px;
     margin-left: 35px;
@@ -1278,7 +1284,8 @@ input[type="radio"]:checked + label span {
   .header-content {
     font-size: 26px;
     line-height: 36px;
-    margin-top: 34px;
+    margin-top: 30px;
+    margin-left: 8px;
   }
   
   .nav {
@@ -1301,6 +1308,17 @@ input[type="radio"]:checked + label span {
   .triends {
     margin-top: 40px;
   }
+
+  .triends-title {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+
+  .triends-title::after {
+    top: 27px;
+    margin-left: -107px;
+  }
+
   .triends-list {
     flex-wrap: wrap;
   }
@@ -1318,8 +1336,11 @@ input[type="radio"]:checked + label span {
   }
 
   .triends-border {
-    padding-left: 20px;
+    padding-left: 19px;
     padding-right: 25px;
+    padding-top: 32px;
+    padding-bottom: 29px;
+    width: 100%;
   }
 
   .news {
@@ -1329,16 +1350,34 @@ input[type="radio"]:checked + label span {
 
   .news-item {
     max-width: 333px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
+    gap: 9px;
+  }
+
+  .news-item::after {
+    content: '';
+    border: 3px solid #EEEEEE;
+    margin-top: 6px;
   }
   .news-title {
     font-size: 16px;
     max-width: 320px;
     margin-bottom: 0;
+    line-height: 20px;
+    margin-left: 0;
+  }
+
+  .news-description {
+    font-size: 14px;
+  }
+
+  .news-description--additional {
+    margin-top: 3px;
   }
 
   .news-author, .news-date {
     margin-bottom: 0;
+    margin-top: 5px;
   }
 
   .news-aside {
@@ -1397,9 +1436,87 @@ input[type="radio"]:checked + label span {
     padding-right: 13px;
   }
 
-  .products-list{
+  /* .tags-link {
+    margin-left: 4px;
+    margin-top: 0px;
+  } */
 
+  /* .tags-link-next {
+    margin-left: 21px;
+  } */
+
+  /* .news-info {
+    margin-top: 3px;
+  } */
+
+  /* .tags-list {
+    margin-top: 3px;
+  } */
+
+  .news-aside-title {
+    padding-left: 0;
+    margin-top: 9px;
   }
+
+  .news-aside-title::after {
+    margin-left: -94px;
+  }
+
+  .news-new-item {
+    margin-left: 0;
+  }
+
+  .news-new-title {
+    width: 240px;
+  }
+
+  .news-new-info {
+    margin-left: 7px;
+  }
+
+  .news-subscribe-title {
+    padding-left: 0;
+    margin-top: 42px;
+  }
+
+  .news-subscribe-input {
+    margin-top: 34px;
+  }
+
+  .tags-aside {
+    margin-top: 42px;
+  }
+
+  .tags-aside-title {
+    width: 330px;
+    padding-left: 0px;
+  }
+
+  .tags-aside-list {
+    margin-bottom: 39px;
+  }
+
+  .themse-aside-title {
+    padding-left: 0;
+  }
+
+  .themse-aside-item {
+    padding: 14px 0;
+  }
+
+
+  .products {
+  margin-top: 38px;
+  margin-bottom: 40px;
+}
+  .products-title {
+  font-size: 16px;
+  margin-bottom: 21px;
+}
+.products-title::after {
+  top: 31px;
+  margin-left: -103px;
+}
 
   .products-item {
     width: 100%;
@@ -1412,20 +1529,24 @@ input[type="radio"]:checked + label span {
   }
   .products-item-title {
     max-width: 290px;
+    margin-top: 55px;
+    margin-left: 21px;
   }
   .products-descr {
     max-width: 290px;
   }
 
   .products-shop {
-    max-width: 290px;
+    max-width: 302px;
+    margin-bottom: 25px;
   }
 
   .shop {
     margin-right: 0;
+    padding: 16px 27px;
   }
   .border-products {
-    width: 336px;
+    width: 333px;
     /* height: 240px; */
     margin-left: 0;
     margin: 0 auto;
