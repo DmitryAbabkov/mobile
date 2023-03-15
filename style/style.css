@@ -418,7 +418,8 @@
   }
   
   .nav-list:nth-child(n+2){
-    gap: 36px;
+    gap: 35px;
+    margin-top: 14px;
   }
   
   .nav-link{
@@ -475,7 +476,7 @@
     font-weight: 700;
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
   
   .tags-link{
@@ -500,7 +501,7 @@
     margin-top: 9px;
     margin-bottom: 15px;
     width: 347px;
-    margin-left: 2px;
+    margin-left: 0;
     margin-top: 8px;
   }
   
@@ -534,13 +535,14 @@
   }
   
   .news-description {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 22px;
     color: #0F0D0E;
+    width: 364px;
   }
   
   .news-description--additional {
-    margin-top: 10px;
+    margin-top: 7px;
   }
   
   .news-info {
@@ -875,6 +877,9 @@
     padding: 100px 22px 15px 22px;
     align-items: flex-end;
   }
+  .triends-item-title {
+    font-size: 20px;
+  }
 
   .triends-item-content {
     max-width: 310px;
@@ -921,7 +926,7 @@
 
   .products {
     margin-top: 1px;
-    margin-bottom: 70px;
+    margin-bottom: 61px;
   }
   .products-title {
     margin-bottom: 40px;
@@ -959,10 +964,11 @@
   }
 
   .products-item-title {
-    margin-top: 50px;
+    margin-top: 47px;
     margin-bottom: 5px;
     text-transform: uppercase;
-    margin-left: 23px;
+    margin-left: 19px;
+    font-size: 20px;
   }
 
   .border-products {
@@ -984,7 +990,7 @@
     max-width: 300px;
     color: #000;
     line-height: 22px;
-    margin-left: 23px;
+    margin-left: 22px;
   }
 
   .products-descr-link {
@@ -1161,6 +1167,9 @@ input[type="radio"]:checked + label span {
 
 
 @media(min-width: 641px) and (max-width: 1200px) {
+  .header {
+    height: 392px;
+  }
   .container {
     max-width: 1200px;
     margin-left: 35px;
@@ -1169,11 +1178,23 @@ input[type="radio"]:checked + label span {
 
   .container-main {
     justify-content: space-around;
+    margin-right: 27px;
+    margin-left: 23px;
   }
 
   .header-content {
     font-size: 40px;
     max-width: 616px;
+    line-height: 55px;
+    margin-top: 84px;
+  }
+
+  .logo {
+    width: 158px;
+  }
+
+  .nav {
+    padding-top: 41px;
   }
 
   .nav-list {
@@ -1181,10 +1202,21 @@ input[type="radio"]:checked + label span {
   }
   .nav-svg {
     display: block;
+    margin-top: 11px;
+  }
+
+  .triends {
+    margin-top: 46px;
   }
 
   .triends-title {
     font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .triends-title::after {
+    top: 31px;
+    margin-left: -115px;
   }
 
   .triends-list {
@@ -1193,6 +1225,7 @@ input[type="radio"]:checked + label span {
   .triends-item {
     width: calc((100% - 4px)/2);
     height: 247px;
+    padding-right: 16px;
   }
 
   .triends-lemon, .triends-mountains {
@@ -1204,22 +1237,133 @@ input[type="radio"]:checked + label span {
       max-width: 248px;
     }
   .triends-border {
-    padding-top: 30px;
-    padding-left: 31px;
+    padding-top: 36px;
+    padding-left: 27px;
     padding-bottom: 30px;
+  }
+
+  .news-aside {
+    margin-top: 47px;
+  }
+  .news-subscribe-title  {
+    margin-top: 62px;
+    padding-left: 12px;
+  }
+
+  .news-subscribe-button {
+    padding-left: 80px;
+    padding-top: 15px;
+  }
+
+  .news {
+    margin-top: 48px;
+  }
+
+  .news-aside-title {
+    padding-left: 25px;
   }
 
   .news-item {
     flex-direction: column;
-    margin-bottom: 70px;
+    margin-bottom: 46px;
+    gap: 11px;
+  }
+
+  .tags-list {
+    margin-left: 2px;
+  }
+
+  /* .news-date {
+    margin-bottom: 15px;
+  }
+
+  .news-author {
+    margin-bottom: 15px;
+  }
+
+  .news-description {
+    margin-left: 3px;
+  } */
+
+  .news-item-img {
+    width: 395px;
+  }
+  .news-new-date {
+    vertical-align: top;
+    font-size: 11px;
+  }
+  .news-title {
+    font-size: 17px;
+    width: 395px;
+  }
+
+  .news-new-info {
+    margin-left: 5px;
+  }
+
+  .news-subscribe-title {
+    padding-left: 16px;
+    margin-top: 59px;
+  }
+
+  .news-subscribe-button {
+    padding-left: 83px;
+  }
+
+  .themse-aside-title {
+    padding-left: 24px;
   }
 
   .themse-aside-item {
-    padding: 15px 0;
+    padding: 14px 15px;
+  }
+
+  .products-title {
+    font-size: 18px;
+    margin-bottom: 45px;
+    /* margin-top: 5px; */
+  }
+
+  .products-title::after {
+    top: 33px;
+    margin-left: -110px;
   }
 
   .products {
     margin-top: 0;
+    padding-left: 22px;
+    padding-right: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .border-products {
+    width: 338px;
+    height: 262px;
+  }
+
+  .products-item {
+    width: calc((100% - 68px)/2);
+    margin-bottom: 24px;
+  }
+
+  .products-item-title {
+    font-size: 17px;
+    margin-top: 50px;
+    margin-bottom: 1px;
+  }
+
+  .products-img {
+    width: 292px;
+    height: 226px;
+    margin-bottom: -36px;
+  }
+  .products-list {
+    max-width: 700px;
+  }
+  .products-descr {
+    margin-left: 20px;
+    max-width: 294px;
   }
 
 
@@ -1352,7 +1496,7 @@ input[type="radio"]:checked + label span {
 
   .news-item {
     max-width: 333px;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
     gap: 9px;
   }
 
@@ -1371,6 +1515,7 @@ input[type="radio"]:checked + label span {
 
   .news-description {
     font-size: 14px;
+    width: 322px;
   }
 
   .news-description--additional {
@@ -1440,7 +1585,7 @@ input[type="radio"]:checked + label span {
 
   .news-aside-title {
     padding-left: 0;
-    margin-top: 9px;
+    margin-top: 5px;
   }
 
   .news-aside-title::after {
@@ -1449,14 +1594,18 @@ input[type="radio"]:checked + label span {
 
   .news-new-item {
     margin-left: 0;
+    /* gap: 11px;
+    margin-top: 21px; */
+    margin-bottom: 0;
   }
 
   .news-new-title {
     width: 240px;
+    margin-top: 0;
   }
 
   .news-new-info {
-    margin-left: 7px;
+    margin-left: 5px;
   }
 
   .news-subscribe-title {
@@ -1492,7 +1641,7 @@ input[type="radio"]:checked + label span {
 
   .products {
   margin-top: 38px;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
   .products-title {
   font-size: 16px;
@@ -1505,21 +1654,26 @@ input[type="radio"]:checked + label span {
 
   .products-item {
     width: 100%;
-    margin-top: 24px;
+    margin-top: 29px;
   }
 
   .products-item-title {
     max-width: 290px;
-    margin-top: 55px;
-    margin-left: 21px;
+    margin-top: 50px;
+    margin-left: 18px;
+    font-size: 17px;
+    margin-bottom: 3px;
   }
   .products-descr {
     max-width: 290px;
+    font-size: 15px;
+    margin-left: 18px;
   }
 
   .products-shop {
     max-width: 302px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
+    margin-top: 19px;
   }
 
   .shop {
