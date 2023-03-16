@@ -1274,18 +1274,9 @@ input[type="radio"]:checked + label span {
     margin-left: 2px;
   }
 
-  /* .news-date {
-    margin-bottom: 15px;
+.news-description {
+  max-width: 22.75rem;  
   }
-
-  .news-author {
-    margin-bottom: 15px;
-  }
-
-  .news-description {
-    margin-left: 3px;
-  } */
-
   .news-item-img {
     max-width: 24.69rem;
   }
